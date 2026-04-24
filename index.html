@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <header id="header">
+    <img class="logo" src="https://res.cloudinary.com/dz08wzjjs/image/upload/v1777063804/wordmark_dark_jbuqca.png" alt="radix logo" id="header-img"/>
+    <nav id="nav-bar">
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link"  href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="hero">
+    <div class="hero-text">
+      <h2>Strength, mobility, and pain relief built for you.</h2>
+      <p>Built for the busy, stiff desk warriors who need a plan that fits real life.</p>
+    </div>
+    <div class="hero-video">
+      <video id="video" controls muted>
+        <source src="https://res.cloudinary.com/dz08wzjjs/video/upload/v1777063812/Squat_feevuh.mov" alt="promo video" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+    <img src="https://res.cloudinary.com/dz08wzjjs/image/upload/f_auto,q_auto/headshot-orange-overlay_ls2sv6" alt="seamus headshot" />
+    <div class="about-text">
+    <p>My relationship with exercise and “fitness” began at twenty, after I was diagnosed with Type 1 Diabetes. That same week, I went on my first run—just down the driveway and back—and started a simple bodyweight strength routine. I run a bit farther now, but living with a chronic illness has taught me this: the best exercise is the kind you can take anywhere, do consistently, and that truly supports your overall health.</p>
+    <p>For the past eight years as a functional trainer and licensed massage therapist I’ve helped more than 3,000 people recover from injuries, surgeries, and chronic pain. My programs:</p>
+    <ul>
+      <li>Offer simple, effective exercise routines that fit into everyday life
+
+</li>
+      <li>Balance training and recovery for steady, sustainable progress
+
+</li>
+      <li>Support mobility, prehab/rehab, stress management, and better sleep
+
+</li>
+    </ul>
+    <p>I’m here to partner with you and help you find your own rhythm and relationship with movement.</p>
+    </div>
+  </div>
+  </section>
+  <section id="services">
+    <h2>Work With Me</h2>
+    <div class="services-container">
+    <div class="service">
+      <h3>Program Only</h3>
+      <p>For intermediate to experienced athletes and those self-directed types</p>
+      <ul>
+        <li>Training plan delivered and hosted in Notion</li>
+        <li>Tailored plan based on your goals</li>
+        <li>Initial setup tailored to your fitness level, schedule, equipment, and constraints</li>
+        <li>12-week training phase with updates at the start of each new phase</li>
+      </ul>
+    </div>
+    <div class="service">
+      <h3>Coaching Lite</h3>
+      <p>For those who want a little more flexibility and support</p>
+      <ul>
+        <li>Everything in Program-Only</li>
+        <li>Weekly check-in form (reviewed weekly)</li>
+        <li>Programming adjustments based on check-ins</li>
+        <li>Coach messaging (Mon–Fri) for questions, accountability, and modifications</li>
+      </ul>
+    </div>
+    <div class="service">
+      <h3>Full Coaching</h3>
+      <p>For those who want a little more flexibility and support</p>
+      <ul>
+        <li>Everything in Coaching Lite</li>
+        <li>Form feedback with video review</li>
+        <li>Monthly 30-minute coaching call</li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <section id="testimonials">
+    <h2>How I've Helped Others</h2>
+    <div class="stories">
+    <div class="testimonial">
+      <p class="story-text">"Seamus went above and beyond. Not only did he get to the root of my problems, he created a personalized video for different stretching routines, which made it very easy to follow along at home on my own time. A++"</p>
+      <p class="story-name">– <a href="https://share.google/1Nsc6ga1zRad1W7fN" target="_blank">Jay Box</a></p>
+    </div>
+    <div class="testimonial">
+      <p class="story-text">"Seamus listens! For me with some structural issues this is extremely important. His massages combine appropriate pressure with stretching techniques which really help realign my back and relieve areas which load unevenly.
+
+Seamus has a calm demeanor which adds to the overall peaceful atmosphere of his massages."</p>
+      <p class="story-name">– <a href="https://share.google/AFIMjbV6DwpRfhmOe" target="_blank">Anne Diaz</a></p>
+    </div>
+    <div class="testimonial">
+      <p class="story-text">"I feel physically transformed after his massages!"
+
+</p>
+      <p class="story-name">– <a href="https://share.google/wqj8Cww75mFpYYfnS" target="_blank">Emily Sleipness</a></p>
+    </div>
+  </div>
+  </section>
+  <section id="contact">
+    <h2>Fill out the form to get started on your coaching journey</h2>
+    <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+    <fieldset>
+      <legend>Your contact info</legend>
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="name" placeholder="john doe". required>
+    <label for="email">Email:</label>
+    <input id="email" type="email" name="email" placeholder="example@email.com". required>
+    </fieldset>
+    <fieldset>
+      <legend>What can I help you achieve?</legend>
+    <label><input type="checkbox" name="goals" value="get stronger"> Get stronger</label>
+    <label><input type="checkbox" name="goals" value="improve stamina and endurance"> Improve stamina and endurance</label>
+    <label><input type="checkbox" name="goals" value="general fitness"> General fitness</label>
+    <label><input type="checkbox" name="goals" value="daily function"> Improve daily mobility and function</label>
+  </fieldset>
+  <fieldset>
+    <legend>Tell me a little bit about you and when you want to start</legend>
+    <textarea></textarea>
+    </fieldset>
+    <input type="submit" id="submit">
+    </form>
+  </section>
+</body>
+<footer>
+  <img class="logo" src="https://res.cloudinary.com/dz08wzjjs/image/upload/v1777063804/wordmark_dark_jbuqca.png" alt="radix logo"/>
+  <p>© 2026 RADIX | Strength + Recovery</p>
+</footer>
+
+</html>
