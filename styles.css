@@ -56,7 +56,6 @@ nav > a{
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
-  margin-bottom: 40px;
 }
 
 .hero-text {
@@ -75,6 +74,10 @@ video {
 
 /* about */
 
+section {
+  margin-bottom: 40px;
+}
+
 #about {
   display: flex;
   flex-direction: column;
@@ -82,7 +85,8 @@ video {
 .about-content {
   display: flex;
   gap: 20px;
-  margin-bottom: 40px;
+  align-items: center;
+
 }
 
 .about-content img {
