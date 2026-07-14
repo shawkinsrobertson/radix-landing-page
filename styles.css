@@ -94,10 +94,12 @@ nav > a:hover {
   align-self: center;
 }
 
-.hero-image > img {
-  max-width: 650px;
+.hero-image {
+  width: min(100%, 650px);
+  height: auto;
   border-radius: 4px;
   margin-left: 40px;
+  display: block;
 }
 
 /* body styles */
@@ -165,19 +167,30 @@ section {
   gap: 20px;
   font-style: italic;
   text-align: left;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .about-content img {
-  max-width:550px;
-  max-height: 550px;
+  width: min(100%, 550px);
+  height: auto;
+  display: block;
 }
 
-#about-img {
+#headshot-w-caption {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 280px;
+  max-width: 550px;
+  margin: 0;
 }
 
+#about-caption {
+  margin-top: 12px;
+  text-align: center;
+  max-width: 100%;
+}
 
 .about-text {
   display: flex;
@@ -186,6 +199,28 @@ section {
   max-width: 600px;
   margin-left: 32px;
   font-style: normal;
+  flex: 1 1 320px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  #headshot-w-caption {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #about-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-text {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 
@@ -209,16 +244,15 @@ section {
 
 .services-container {
   display: flex;
-  gap: 16px;
-
+  gap: 32px;
+  flex: 1 1 0;
 }
 
 .service {
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color:rgb(245, 245, 245);
-  border-radius: 3px;
+  border-radius: 8px;
+  border: 0.5px solid #dc7200;
   padding: 16px;
   flex: 1 1 0;
 }
@@ -235,7 +269,7 @@ section {
   border-radius: 12px;
   text-decoration: none;
   margin-top: auto;
-  width: 75%;
+  width: 45%;
   align-self: center;
 }
 
@@ -328,11 +362,18 @@ footer {
 /* smaller screens */
 @media screen and (max-width: 768px) {
 
-  .about-content, .services-container, .stories {
+  #what-you-get, #benefit-content, .about-content, .services-container, 
+  .stories, #about, .about-content, .testimonial, header {
     flex-direction: column;
+    gap:20px;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
   }
 
   #hero {
      flex-direction: column;
+      gap:20px;
   }
 }
