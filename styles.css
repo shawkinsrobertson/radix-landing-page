@@ -6,6 +6,7 @@
 
 h1, h2, h3 {
   font-family: Montserrat, sans-serif;
+  font-weight: 600;
 }
 
 h2 {
@@ -19,6 +20,15 @@ h3 {
 body {
   margin: 20px auto;
   padding: 020px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #dc7200;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /*header styles*/
@@ -76,10 +86,8 @@ nav > a:hover {
 #apply-button {
   display: block;
   text-align: center;
-  background-color: black;
-  color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 12px;
   text-decoration: none;
   margin-top: auto;
   width: 35%;
@@ -130,10 +138,8 @@ nav > a:hover {
 #get-started-btn {
   display: block;
   text-align: center;
-  background-color: black;
-  color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 12px;
   text-decoration: none;
   margin-top: auto;
   margin-left:16px;
@@ -186,10 +192,8 @@ section {
 #learn-more-btn {
   display: block;
   text-align: center;
-  background-color: black;
-  color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 12px;
   text-decoration: none;
   margin-top: auto;
   margin-left: 0;
@@ -227,10 +231,8 @@ section {
 .btn {
   display: block;
   text-align: center;
-  background-color: black;
-  color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 12px;
   text-decoration: none;
   margin-top: auto;
   width: 75%;
@@ -251,8 +253,8 @@ section {
 .testimonial {
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 4px 4px rgba(114, 120, 154, 0.25);
-  border-radius: 3px;
+  border: 0.5px solid #ccc;
+  border-radius: 8px;
   padding: 16px;
   flex: 1 1 0;
 }
@@ -269,8 +271,7 @@ section {
 .story-name > a {
   text-align: center;
   font-weight: 600;
-  font-style: italic;
-  color: #333;
+  color: #dc7200;
   padding: 8px;
   text-decoration: none;
 }
@@ -302,10 +303,11 @@ legend {
 }
 
 #submit {
-  background-color: black;
+  background-color: #dc7200;
   color: white;
+  border: none;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 12px;
   text-decoration: none;
   width: 35%;
   align-self: center;
