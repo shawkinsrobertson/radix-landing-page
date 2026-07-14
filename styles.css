@@ -102,6 +102,11 @@ nav > a:hover {
   display: block;
 }
 
+#hero-divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0.5px dotted #ccc;
+}
 /* body styles */
 
 /* value section */
@@ -118,6 +123,7 @@ nav > a:hover {
   max-width: 650px;
   border-radius: 4px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
 
@@ -234,6 +240,30 @@ section {
   margin-left: 0;
   width: 35%;
   align-self: flex-start;
+}
+
+
+/* how it works */
+
+.how-it-works-content {
+  display: flex;
+  gap: 16px;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 0.5px solid #ccc;
+  padding: 16px;
+  width: 30%;
+  
+}
+
+.how-it-works-content hr { 
+  width: 100%; height: 0; margin: 0; border: 0; 
 }
 
 /* services */
