@@ -160,7 +160,7 @@ section {
 .testimonial {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  box-shadow: 0px 4px 4px rgba(114, 120, 154, 0.25);
   border-radius: 3px;
   padding: 16px;
   flex: 1 1 0;
@@ -210,6 +210,25 @@ legend {
   font-weight: 600;
 }
 
+#submit {
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 35%;
+  align-self: center;
+}
+
+/* footer */
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #333;
+}
 
 /* smaller screens */
 @media screen and (max-width: 768px) {
