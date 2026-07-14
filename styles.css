@@ -261,6 +261,8 @@ section {
 
 .story-text {
   font-style: italic;
+  font-weight: lighter;
+  line-height: 1.5;
 }
 
 .story-name {
